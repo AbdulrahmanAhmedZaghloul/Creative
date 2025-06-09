@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Moon, Sun } from 'lucide-react';
-
+import { Menu, X, Moon, Sun } from 'lucide-react';
+import logo from '../logo/fov-1.png'
 interface HeaderProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
@@ -44,15 +44,17 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2 space-x-reverse">
-            <Code className="h-8 w-8 text-primary-600 dark:text-primary-400" />
-            <span className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
-              كريتيف كود
-            </span>
+          <div className="flex bg-red- w-1/3 items-center space-x-2 space-x-reverse">
+            {/* <Code   /> */}
+            {/* <span className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white"> */}
+              <img className="h-1/2 w-1/2 " src={logo} alt="" />
+            {/* </span> */}
+
+          
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 space-x-reverse">
+          <nav className="w-1/3 hidden md:flex items-center justify-center space-x-8 space-x-reverse">
             {navItems.map((item) => (
               <button
                 key={item.href}
@@ -66,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           </nav>
 
           {/* Dark Mode Toggle & Mobile Menu Button */}
-          <div className="flex items-center space-x-4 space-x-reverse">
+          <div className=" w-1/3 flex items-center justify-end space-x-4 space-x-reverse">
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"

@@ -1,26 +1,27 @@
 import { Helmet } from "react-helmet";
 
 const SEO = () => {
-  return (
-    <Helmet>
-      <title>شركة الكود الإبداعي - حلول برمجية مبتكرة</title>
-      <meta
-        name="description"
-        content="نقدم خدمات تصميم المواقع، تطوير التطبيقات، حلول SaaS، وأنظمة برمجية مخصصة تساعدك على تحويل فكرتك إلى منتج رقمي ناجح."
-      />
-      <meta
-        name="keywords"
-        content="برمجة, تصميم مواقع, تطوير تطبيقات, تطبيقات موبايل, SaaS, حلول برمجية, شركة برمجيات, عبدالرحمن زغلول"
-      />
-      <meta name="author" content="عبدالرحمن زغلول" />
-      <meta name="robots" content="index, follow" />
+    return (
+        <Helmet>
+            <title> Creative Code</title>
+            <meta
+                name="description"
+                content="نقدم خدمات تصميم المواقع، تطوير التطبيقات، حلول SaaS، وأنظمة برمجية مخصصة تساعدك على تحويل فكرتك إلى منتج رقمي ناجح."
+            />
+            <meta
+                name="keywords"
+                content="برمجة, تصميم مواقع, تطوير تطبيقات, تطبيقات موبايل, SaaS, حلول برمجية, شركة برمجيات, عبدالرحمن زغلول"
+            />
+            <meta name="author" content="عبدالرحمن زغلول" />
+            <meta name="robots" content="index, follow" />
+            <link rel="icon" href="/src/logo/Screenshot_2025-06-09_200657-removebg-preview.png" type="image/x-icon" />
 
-      <script type="application/ld+json">
-        {`
+            <script type="application/ld+json">
+                {`
           {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "شركة الكود الإبداعي",
+            "name": "Creative Code",
             "url": "https://creative-eqmk912fx-zaghlouls-projects.vercel.app",
             "logo": "https://creative-eqmk912fx-zaghlouls-projects.vercel.app/logo.png",
             "description": "نقدم خدمات تصميم المواقع، تطوير التطبيقات، حلول SaaS، وأنظمة مخصصة.",
@@ -31,16 +32,16 @@ const SEO = () => {
             ],
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+201234567890",
+              "telephone": "+201142631113",
               "contactType": "customer service",
               "areaServed": "EG",
               "availableLanguage": ["Arabic", "English"]
             }
           }
         `}
-      </script>
-    </Helmet>
-  );
+            </script>
+        </Helmet>
+    );
 };
 
 export default SEO;
