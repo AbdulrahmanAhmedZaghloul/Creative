@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 const SEO = () => {
     return (
         <Helmet>
-            <title> Creative Code</title>
+            <title>Creative Code</title>
             <meta
                 name="description"
                 content="نقدم خدمات تصميم المواقع، تطوير التطبيقات، حلول SaaS، وأنظمة برمجية مخصصة تساعدك على تحويل فكرتك إلى منتج رقمي ناجح."
