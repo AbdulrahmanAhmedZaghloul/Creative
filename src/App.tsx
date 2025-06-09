@@ -7,6 +7,7 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+ import SEO from './components/SEO';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,7 +16,7 @@ function App() {
     // Check for saved theme preference or default to light mode
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setDarkMode(true);
       document.documentElement.classList.add('dark');
@@ -28,7 +29,7 @@ function App() {
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    
+
     if (newDarkMode) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
@@ -39,18 +40,24 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <About />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+
+    <>
+      <SEO />
+
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <main>
+          <Hero />
+          <Services />
+          <Portfolio />
+          <About />
+          <Testimonials />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
+
   );
 }
 

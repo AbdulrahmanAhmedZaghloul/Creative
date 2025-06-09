@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowUp } from 'lucide-react';
+import { Code, Mail, Phone,  Facebook, Twitter, Instagram, Linkedin, ArrowUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-2 space-x-reverse mb-6">
                 <Code className="h-8 w-8 text-primary-400" />
-                <span className="text-2xl font-bold">شركة الكود الإبداعي</span>
+                <span className="text-2xl font-bold">شركة  كريتيف كود</span>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
                 نحن شركة ناشئة متخصصة في تطوير الحلول التقنية المبتكرة. 
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
             
             {/* Copyright */}
             <div className="text-gray-400 text-center md:text-right mb-4 md:mb-0">
-              <p>© {currentYear} شركة الكود الإبداعي. جميع الحقوق محفوظة.</p>
+              <p>© {currentYear} شركة  كريتيف كود   . جميع الحقوق محفوظة.</p>
             </div>
 
             {/* Social Links */}
